@@ -1,4 +1,4 @@
-    let countEl = document.getElementById("count-el");
+let countEl = document.getElementById("count-el");
 
 function increaseCount() {
     let count = parseInt(countEl.innerText);
@@ -13,3 +13,5 @@ function decreaseCount() {
         countEl.innerText = count;
     }
 }
+
+
