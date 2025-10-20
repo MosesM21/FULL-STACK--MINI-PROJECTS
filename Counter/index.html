@@ -10,9 +10,15 @@
     <div class="container">
         <h1 class="title">Passenger Count</h1>
         <div class="counter">
-            <h2 id="count-el">0</h2>
+            <div class="count-display">
+                <h2 id="count-el">0</h2>
+            </div>
+            
             <button id="increase" onclick="increaseCount()">+</button>
             <button id="decrease" onclick="decreaseCount()">-</button>
+            <div class="save-btn">
+                <button onclick="save()" id="save-btn">Save</button>
+            </div>
         </div>
     </div>
 
