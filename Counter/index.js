@@ -1,4 +1,5 @@
 let countEl = document.getElementById("count-el");
+    let saveEl = document.getElementById("save-el");
 let count = 0;
 
 function increaseCount() {
@@ -14,6 +15,9 @@ function decreaseCount() {
 }
 
 function save() {
-    console.log("Count saved: " + count);
+    let countStr = count + " -";
+    saveEl.textContent += countStr;
+    console.log(count);
+    
 }
 

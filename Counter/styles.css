@@ -47,7 +47,6 @@ button {
     background-color: #0db912;
     color: white;
     transition: background-color 0.3s ease;
-    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
 }
 
 button#increase:hover {
@@ -74,7 +73,25 @@ button#decrease:hover {
 }
 
 button#save-btn {
-    background-color: #008CBA;
+    background-color: #0f0f0f;
     width: 100%;
     font-size: 1em;
+}
+
+/* PREVIOUS ENTRIES */
+.text {
+    font-size: 0.5em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333333;
+    width: 100%;
+}
+
+#save-el {
+    font-size: 0.8em;
+    color: #555555;
+    margin: 0;
+    width: 180px;
+    align-items: center;
+    display: inline-block;
 }
