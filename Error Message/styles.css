@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.shoe-img h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#purchase-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#purchase-btn:hover {
+    background-color: #333333;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
