@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ITALY FLAG */
+.italy {
+    width: 320px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px auto;
+    box-shadow: 0px 2px 10px 2px rgba(1, 1, 1, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.italy div:nth-child(1) {
+    background-color: green;
+    flex: 1;
+}
+.italy div:nth-child(2) {
+    background-color: white;
+    flex: 1;
+}
+.italy div:nth-child(3) {
+    background-color: crimson;
+    flex: 1;
+}
+
+/* GERMAN FLAG */
+.german {
+    width: 320px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px auto;
+    box-shadow: 0px 2px 10px 2px rgba(1, 1, 1, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.german div:nth-child(1) {
+    background-color: crimson;
+    flex: 1;
+}
+
+.german div:nth-child(2) {
+    background-color: gold;
+    flex: 1;
+}
+
+.german div:nth-child(3) {
+    background-color: black;
+    flex: 1;
+}
+
+/* GERMAN FLAG */
+.france {
+    width: 320px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 20px auto;
+        box-shadow: 0px 2px 10px 2px rgba(1, 1, 1, 0.5);
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+}
+
+.france div:nth-child(1) {
+    background-color: blue;
+    flex: 1;
+}
+
+.france div:nth-child(2) {
+    background-color: white;
+    flex: 1;
+}
+
+.france div:nth-child(3) {
+    background-color: red;
+    flex: 1;
+}
+
+.flags {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+/* JAPAN */
+.japan {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    width:320px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px 2px rgba(1, 1, 1, 0.5);
+}
+
+.japan div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

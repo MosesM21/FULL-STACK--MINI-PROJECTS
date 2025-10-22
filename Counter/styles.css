@@ -70,6 +70,7 @@ button#decrease:hover {
     width: 100%;
     display: flex;
     justify-content: center;
+    font-size: 0.8em;
 }
 
 button#save-btn {
@@ -91,7 +92,8 @@ button#save-btn {
     font-size: 0.8em;
     color: #555555;
     margin: 0;
-    width: 180px;
+    width: 300px;
     align-items: center;
     display: inline-block;
+    border: 1px solid #ccc;
 }
