@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Lets Calculate</h2>
+        <div class="number-display">
+            <span id="num1-el"></span>
+            <span id="num2-el"></span>
+
+        </div>
+        <div class="operator-btns">
+            <button onclick="add()" id="add-btn">+</button>
+            <button onclick="subtract()" id="subtract-btn">-</button>
+            <button onclick="multiply()" id="multiply-btn">x</button>
+            <button onclick="divide()" id="divide-btn">/</button>
+        </div>
+        <div class="result-display">
+            <h3><span id="result-el">Result: 0</span></h3>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
