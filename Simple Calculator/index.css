@@ -8,7 +8,7 @@ body {
 .container {
     width: 350px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 30px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -55,11 +55,21 @@ button:hover {
     margin: 20px 0;
     height: 50px;
     width: 100%;
+    justify-content: center;
     border-radius: 10px;
     border: 1px solid #ccc;
     text-align: right;
 }
 
-.result-display {
-    
+.number-display {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #71e999;
 }
+
+#num1-el {
+    margin-right: 10px;
+}
+
