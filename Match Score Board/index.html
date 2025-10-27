@@ -8,26 +8,34 @@
 </head>
 <body>
     <div class="container">
-        <div class="score-container">
-            <h1>HOME</h1>
-            <div class="home-val">
-                <span id="home-el">15</span>
+        <div class="inner-container">
+            <div class="score-container">
+                <h1>HOME</h1>
+                <div class="home-val">
+                    <span id="home-el">0</span>
+                </div>
+                <div class="buttons">
+                    <button onclick="onePoint()" id="plus1-btn">+1</button>
+                    <button onclick="twoPoints()" id="plus2-btn">+2</button>
+                    <button onclick="threePoints()" id="plus3-btn">+3</button>
+                </div>
             </div>
-            <div class="buttons">
-                <button id="plus1-btn">+1</button>
-                <button id="plus2-btn">+2</button>
-                <button id="plus3-btn">+3</button>
+            <div class="divider">
+                <div class="div">
+                    -
+                </div>
+                <button onclick="resetScores()" id="reset-btn">Reset Score</button>
             </div>
-        </div>
-        <div class="score-container">
-            <h1>GUEST</h1>
-            <div class="home-val">
-                <span id="away-el">12</span>
-            </div>
-            <div class="buttons">
-                <button id="plus1-btn">+1</button>
-                <button id="plus2-btn">+2</button>
-                <button id="plus3-btn">+3</button>
+            <div class="score-container">
+                <h1>AWAY</h1>
+                <div class="home-val">
+                    <span id="away-el">0</span>
+                </div>
+                <div class="buttons">
+                    <button onclick="away1Point()" id="plus1-btn">+1</button>
+                    <button onclick="away2Points()" id="plus2-btn">+2</button>
+                    <button onclick="away3Points()" id="plus3-btn">+3</button>
+                </div>
             </div>
         </div>
     </div>
