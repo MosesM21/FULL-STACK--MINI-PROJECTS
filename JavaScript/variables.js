@@ -2,8 +2,8 @@ let firstName = "moses";
 let lastName = 'mwale';
 let fullName = firstName + " " + lastName;
 
-function hiThere() {
-    console.log("hi there, " + fullName);
-}
+let arr = ['moses', 25, true]
 
-hiThere();
+name = arr[0]
+
+console.log(name)
