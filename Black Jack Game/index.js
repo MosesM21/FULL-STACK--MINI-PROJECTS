@@ -1,3 +1,9 @@
+// Player Object
+let player = {
+    name: "Moses",
+    chips: 10000,
+}
+
 let firstCard = getRandomCard();
 let secondCard = getRandomCard();
 let cards = [firstCard, secondCard];
@@ -8,15 +14,7 @@ let message = "";
 let messageEl = document.querySelector("#message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardEl = document.querySelector("#card-el")
-
-// Player Object
-let player = {
-    name: "Moses",
-    chips: 10000,
-}
-
 let playerEl = document.getElementById('player-el')
-playerEl.textContent = player.name + ": K" + player.chips
 
 // GET RANDOM CARD
 function getRandomCard() {
@@ -33,6 +31,8 @@ function getRandomCard() {
 
 // START GAME
 function startGame() {
+    player.chips -= 20;
+    playerEl.textContent = player.name + ": K" + player.chips
     renderGame()
 }
 
@@ -65,9 +65,9 @@ function renderGame() {
 function newCard() {
     if (isAlive === true && hasBlackJack === false) {
         let card = getRandomCard();
-    sum += card
-    cards.push(card)
-    startGame()
+        sum += card
+        cards.push(card)
+        startGame()
     } else {
         messageEl.textContent = 'Game Over'
     }
