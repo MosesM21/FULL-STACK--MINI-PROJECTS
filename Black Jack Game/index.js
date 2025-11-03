@@ -1,13 +1,25 @@
-let firstCard = 2;
-let secondCard = 9;
-let cards = [firstCard, secondCard]
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
+let cards = [firstCard, secondCard];
 let sum = firstCard + secondCard;
-let hasBlackJack = false
+let hasBlackJack = false;
 let isAlive = true //in the game
-let message = ""
+let message = "";
 let messageEl = document.querySelector("#message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardEl = document.querySelector("#card-el")
+
+// GET RANDOM CARD
+function getRandomCard() {
+    let randomNum = Math.floor(Math.random() * 13) + 1;
+
+    if (randomNum === 1) {
+        return 11;
+    } else if (randomNum === 12 || randomNum === 13) {
+        return 10;
+    }
+    return randomNum
+}
 
 // START GAME
 function startGame() {
@@ -17,7 +29,12 @@ function startGame() {
 // RENDER FUNCTION
 function renderGame() {
     sumEl.textContent = sum
-    cardEl.textContent = cards[0] + " and " + cards[1]
+    
+    // Render all the cards
+    cardEl.textContent = ""
+    for (let i = 0; i < cards.length; i++) {
+        cardEl.textContent += cards[i] + " + "
+    }
 
     if (sum <= 20) {
         message = 'Do you want to draw a new card 😒';
@@ -28,6 +45,7 @@ function renderGame() {
     } else {
         message = "You're out of the game!!😭"
         isAlive = false
+        resetGame()
     }
 
     messageEl.textContent = message
@@ -36,9 +54,15 @@ function renderGame() {
 
 // Get new card button function
 function newCard() {
-    let card = 10; 
+    let card = getRandomCard();
     sum += card
     cards.push(card)
     startGame()
 }
+
+// RESET GAME
+function resetGame() {
+    
+}
+
 // CASH OUT
