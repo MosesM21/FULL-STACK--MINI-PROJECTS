@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'street-fighter';
+    src: url(fonts/CafeFelixPersonalUseOnly-ARJ16.ttf);
+}
+
+body {
+    font-family: 'street-fighter';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 8px 0.5px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    font-size: 300%;
+    margin: 1px;
+    margin-bottom: 10px;
+    color: rgb(255, 136, 0);
+    text-shadow: 2px 2px 0.3px rgba(0, 0, 0, 1);
+}
+
+#stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    font-size: 70px;
+}
+
+button {
+    margin: 10px auto;
+    width: 70%;
+    height: 45px;
+    font-family: inherit;
+    font-size: x-large;
+    border-radius: 15px;
+    border: none;
+    background-color: orange;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(216, 140, 0);
+    transition: 300ms;
+
+}

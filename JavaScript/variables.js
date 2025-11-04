@@ -1,9 +1,30 @@
-let firstName = "moses";
-let lastName = 'mwale';
-let fullName = firstName + " " + lastName;
+let person = {
+    name: 'Moses Mwale',
+    age: 25,
+    country: 'Zambia'
+}
 
-let arr = ['moses', 25, true]
+let largeCountries = [
+    'China',
+    'USA',
+    'India',
+    'Indonesia',
+    'Pakistan'
+]
 
-name = arr[0]
+function logData() {
+    let message = person.name + " is " + person.age + " years old and lives in " + person.country;
+    console.log(message);
+}
 
-console.log(name)
+function largeCountry() {
+    largeCountries.shift('Ghana')
+    largeCountries.unshift
+
+    for (let i = 0; i < largeCountries.length; i++) {
+        console.log('- ' + largeCountries[i])
+    }
+}
+
+largeCountry()
+logData()
