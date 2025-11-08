@@ -10,6 +10,6 @@ function sortFruits() {
             
         } else if (fruits[i] === '🍊' || fruits[i] === '🟠') {
             orangeEl.textContent += '🍊'
-        }
+        } 
     }
 }
