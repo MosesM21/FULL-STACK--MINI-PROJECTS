@@ -3,8 +3,7 @@ body {
     margin: 0;
     background-color: rgb(106, 197, 106);
 }
-
-div {
+.container {
     box-shadow: 0px 4px 7px rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
@@ -15,18 +14,33 @@ div {
     padding: 10px;
     width: 350px;
     flex-direction: column;
+    font-size: xx-large;
+    background-image: url(download.jpg);
+    text-shadow: 3px 3px 6px black;
 }
 
 #apple-shelf {
     background-color: rgb(255, 114, 144);
-    height: 50px;
+    height: 80px;
     width: 90%;
     margin: 10px auto;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid;
 } 
 
 #orange-shelf {
     background-color: rgb(255, 190, 92);
-    height: 50px;
+    height: 80px;
     width: 90%;
     margin: 10px auto;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid;
 }
