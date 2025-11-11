@@ -4,10 +4,18 @@ const saveEl = document.getElementById('save-btn');
 const inputEl = document.getElementById('input-box');
 
 function saveLead() {
-    listEl.innerHTML = "";
+    let listItems = "";
     for (let i = 0; i < myLeads.length; i++) {
-        listEl.innerHTML += "<li>" + myLeads[i] + "</li>";
+        listItems += `
+            <li>
+                <a target='_blank' href='${myLeads[i]}'>
+                    ${myLeads[i]}
+                </a>
+            </li>
+        `;
     }
+
+    listEl.innerHTML = listItems;
 }
 
 saveEl.addEventListener("click", function () {
@@ -22,4 +30,3 @@ saveEl.addEventListener("click", function () {
     inputEl.value = "";
     saveLead();
 })
-
