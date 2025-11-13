@@ -3,7 +3,9 @@ const listEl = document.getElementById('list');
 const saveEl = document.getElementById('save-btn');
 const inputEl = document.getElementById('input-box');
 
+let leadsFromLocalstorage = JSON.parse(localStorage.getItem("myLeads"))
 
+console.log(leadsFromLocalstorage + " from localstorage");
 
 function saveLead() {
     let listItems = "";
@@ -16,10 +18,9 @@ function saveLead() {
             </li>
         `;
 
-        listItems = localStorage.setItem("myLeads", JSON.stringify(myLeads));
     }
     
-    listEl.innerHTML = listItems;
+    listEl.innerHTML = listItems; 
 }
 
 saveEl.addEventListener("click", function () {
@@ -32,8 +33,11 @@ saveEl.addEventListener("click", function () {
     myLeads.push(value);
     // clear input box after saving
     inputEl.value = "";
-    
-    console.log(localStorage.getItem("myLeads"));
+
+    //Save the myleads array to localStorage
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
     
     saveLead();
+
+    console.log(localStorage.getItem("myLeads"));
 })
