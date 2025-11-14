@@ -3,7 +3,7 @@ const listEl = document.getElementById('list');
 const saveEl = document.getElementById('save-btn');
 const inputEl = document.getElementById('input-box');
 
-let leadsFromLocalstorage = JSON.parse(localStorage.getItem("myLeads"))
+let leadsFromLocalstorage;
 
 console.log(leadsFromLocalstorage + " from localstorage");
 
@@ -24,20 +24,10 @@ function saveLead() {
 }
 
 saveEl.addEventListener("click", function () {
-    // ignore empty inputs
-    let value = inputEl.value.trim();
-    if (value === "") {
-        return; 
-    }
-
     myLeads.push(value);
-    // clear input box after saving
-    inputEl.value = "";
+    inputEl.value = ""; // clear input box after saving
 
     //Save the myleads array to localStorage
     localStorage.setItem("myLeads", JSON.stringify(myLeads));
-    
     saveLead();
-
-    console.log(localStorage.getItem("myLeads"));
 })
