@@ -24,7 +24,7 @@ function saveLead() {
 }
 
 saveEl.addEventListener("click", function () {
-    myLeads.push(value);
+    myLeads.push(input. value);
     inputEl.value = ""; // clear input box after saving
 
     //Save the myleads array to localStorage
