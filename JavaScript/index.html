@@ -4,11 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        img {
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            flex-direction: row;
+        }
+
+        #img-container {
+            display: flex;
+            width: 50%;
+            margin: 10px auto;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+            gap: 15px;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            margin: 20px auto;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 5px auto;
+        }
+    </style>
 </head>
 <body>
     <p>
         Greetings: <span id="greeting-el"></span>
     </p>
+    <button id="logName-btn">Log Name</button>
+    <div id="container">
+        <h1>My Images</h1>
+        <div id="img-container">
+
+        </div>
+    </div>
     <script src="Arrays.js"></script>
 </body>
 </html>
