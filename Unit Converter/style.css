@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* OUTER CONTAINER */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+/* INPUT FIELD BLUE CONTAINER */
+.converter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: rgb(107, 107, 250);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+.converter-box h2 {
+    margin: 10px 0;
+}
+.converter-box input {
+    width: 105px;
+    height: 60px;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: inherit;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+.converter-box input:focus {
+    outline: none;
+    border-color: #dddddd;
+    background-color: inherit;
+    color: white;
+}
+
+.converter-box #convert-btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(107, 107, 250);
+    border: none;
+    margin: 10px 0;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+.converter-box #convert-btn:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+/* RESULTS BOX GRAY CONTAINER */
+.results-box {
+    background-color: rgb(248, 248, 248);
+    color: rgb(107, 107, 250);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.results-box p {
+    margin: 10px 0;
+    color: black;
+    font-size: 14px;
+}
