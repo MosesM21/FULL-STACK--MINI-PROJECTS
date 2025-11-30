@@ -3,4 +3,4 @@ throughout the journey of becoming a full-stack developer.
 
 This repo contains various projects i've built from beginner to advanced.
 
-God speed
+God speed.
