@@ -2,5 +2,5 @@ import {
     interplanetSpaceDestinationsArr,
     shortDestinationsArr
 } from "./data.js";
-
-console.log(interplanetSpaceDestinationsArr);
+import filterFunction from "./searchFunction.js";
+console.log(filterFunction(interplanetSpaceDestinationsArr, "large"));
