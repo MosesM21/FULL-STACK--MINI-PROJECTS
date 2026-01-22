@@ -1,2 +1,2 @@
 const dateSnapshot = new Date();
-console.log(dateSnapshot.toDateString());
+console.log(dateSnapshot.toUTCString());
