@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     font-weight: 500;
-    background-color: #f4f4f4;
+    background-color: #333131;
     margin: 0;
     padding: 0;
 }
@@ -20,3 +20,11 @@ body {
     margin: 10px 0;
 }
 
+#stock-name, #stock-symbol, #stock-price, #stock-time {
+    font-weight: bold;
+}
+
+#stock-price-arrow {
+    display: inline-block;
+    margin-left: 0px;
+}
