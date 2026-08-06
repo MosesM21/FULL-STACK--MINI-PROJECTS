@@ -1,21 +1,8 @@
-function getLabelsHtml(text, sender, ...namesObj) {
-  const labels = namesObj.map((namesObj) => {
-    return `<div class="label">
-      <p>${text}</p>
-      <p>From: ${sender}</p>
-      <p>To: ${namesObj.name}</p>
-    </div>`;
-  });
+let receiverName = document.getElementById("receiver-name");
+let sender = document.getElementById("sender");
+let text = document.getElementById("label-text");
 
-  return labels.join("");
+function showLabels(receiver, ...messages) {
+  receiverName.innerText = receiver;
+  text.innerText = messages.join(" ");
 }
-
-const text = "Thank you";
-const sender = "Tom Cat";
-
-document.getElementById("labels-container").innerHTML = getLabelsHtml(
-  text,
-  sender,
-  { name: "Jerry Mouse" },
-  { name: "Spike Bulldog" },
-);

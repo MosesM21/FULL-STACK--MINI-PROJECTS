@@ -1,34 +1,32 @@
 // let person = {
-//     name: 'Moses Mwale',
-//     age: 25,
-//     country: 'Zambia'
-// }
+//   name: "Moses Mwale",
+//   age: 25,
+//   country: "Zambia",
+// };
 
-// let largeCountries = [
-//     'China',
-//     'USA',
-//     'India',
-//     'Indonesia',
-//     'Pakistan'
-// ]
+// let largeCountries = ["China", "USA", "India", "Indonesia", "Pakistan"];
 
 // function logData() {
-//     let message = person.name + " is " + person.age + " years old and lives in " + person.country;
-//     console.log(message);
+//   let message =
+//     person.name +
+//     " is " +
+//     person.age +
+//     " years old and lives in " +
+//     person.country;
+//   console.log(message);
 // }
 
 // function largeCountry() {
-//     largeCountries.shift('Ghana')
-//     largeCountries.unshift
+//   largeCountries.shift("China");
 
-//     for (let i = 0; i < largeCountries.length; i++) {
-//         console.log('- ' + largeCountries[i])
-//     }
+//   for (let i = 0; i < largeCountries.length; i++) {
+//     console.log("- " + largeCountries[i]);
+//   }
+//   console.log(largeCountries.shift());
 // }
 
-// largeCountry()
-// logData()
-
+// largeCountry();
+// logData();
 
 // TERNARY OPERATOR
 // const playerGuess = 3
@@ -77,11 +75,28 @@
 
 // console.log(tripSummary)
 
-
 //
-function logAnswer(answer, points) {
-    console.log(`The answer is ${answer} of cours!. If you got the right answer, give yourself ${points} points!`);
-}
+// function logAnswer(answer, points) {
+//   console.log(
+//     `The answer is ${answer} of cours!. If you got the right answer, give yourself ${points} points!`,
+//   );
+// }
 
-console.log('What is the answer to life, the universe and everything?');
-setTimeout(logAnswer, 2000, "love", 42);
+// console.log("What is the answer to life, the universe and everything?");
+// setTimeout(logAnswer, 2000, "love", 42);
+
+// //ARROW FUNCTION
+// const something = (name, age) =>
+//   console.log(`Hello ${name}, you've spent ${age} years in this world World!`);
+// something("Moses", 25);
+
+// // CALL BACK FUNCTIONS
+// function notifyUser(notifyFn) {
+//   notifyFn();
+// }
+
+// const emailNotification = () => {
+//   console.log("You have a new email!");
+// };
+
+// notifyUser(emailNotification);
